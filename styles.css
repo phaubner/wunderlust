@@ -1,0 +1,622 @@
+/*Paige Haubner*/
+
+/* Yellow #F6D64A*/
+/* Teal #55BCD5*/
+/* Purple #9B26B0*/
+/* Blue #499BD2*/
+/* Dark Gray #222222*/
+/* Light gray #EAEAEA*/
+/* White #FFFFFF*/
+/* Black #000000*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/* Molle font-family: "Molle", sans-serif;*/
+/* Montserrat font-family: "Montserrat", sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Molle&family=Montserrat&display=swap');
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+header {
+	background-image: linear-gradient(180deg, #55BCD5, white);
+}
+body {
+	line-height: 1;
+}
+#skip {
+	background: black;
+	color: white;
+	position: absolute;
+	padding: 5px 10px;
+	text-decoration: none;
+	font-size: 20px;
+	left: 30%;
+	transform: translateY(-500%);
+	transition: transform 0.3s;
+}
+#skip:focus {
+	transform: translateY(80%);
+	margin: auto;
+	z-index: 2;
+}
+#logo {
+	padding-top: 20px;
+}
+h1 {
+	font-size: 60px;
+	padding-top: 20px;
+	padding-left: 5%;
+	margin-top: 30px;
+}
+header p {
+	padding-left: 5%;
+}
+h1, h2, h3 {
+	font-family: "Molle", sans-serif;
+}
+h3 {
+	font-size: 50px;
+}
+h4, p, q, small, nav, button, form {
+	font-family: "Montserrat", sans-serif;
+}
+#menu-toggle label {
+	padding-bottom: 20px;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+#menu-toggle {
+	/* position: absolute; */
+	margin-left: 50%;
+	text-align: center;
+	padding: 25px 0 25px 0;
+	background-color: #F6D64A;
+	color: black;
+	width: 50%;
+	max-height: 20px;
+	font-size: 20px;
+	overflow: hidden;
+}
+#menu-toggle input[type="checkbox"] {
+	display: none;
+}
+nav ul {
+	margin-top: 25px;
+}
+#menu-toggle:hover {
+	background-color: black;
+	color: white;
+	width: 100%;
+	cursor: pointer;
+	max-height: 430px;
+}
+.sr-only {
+	visibility: hidden;
+	font-size: 0;
+}
+nav li {
+	display: flex;
+	justify-content: center;
+	background-color: #55BCD5;
+	height: 100px;
+	border: 1px solid black;
+}
+nav li:hover {
+	background-color: black;
+	color: white;
+}
+nav li a {
+	text-decoration: none;
+	color: black;
+	text-transform: uppercase;
+	font-weight: 700;
+	padding-top: 40px;
+}
+#intro {
+	padding-bottom: 20px;
+}
+#intro img {
+	width: 100%;
+	height: 400px;
+	padding-top: 20px;
+}
+#intro h2 {
+	font-size: 50px;
+	padding-left: 5%;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+#intro p {
+	font-size: 20px;
+	line-height: 1.8em;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+ol, ul {
+	list-style: none;
+}
+#plan {
+	background: #F6D64A;
+	padding-top: 20px;
+	padding-bottom: 15px;
+}
+#plan h3 {
+	padding: 20px;
+	padding-left: 8%;
+}
+#plan div {
+	display: grid;
+	grid-template-rows: repeat(4, 375px);
+	justify-items: center;
+}
+#plan h4 {
+	font-size: 33px;
+	font-weight: 700;
+	padding-top: 20px;
+	padding-left: 10%;
+	padding-bottom: 20px;
+	width: 300px;
+}
+#plan section {
+	background-color: #55BCD5;
+	border: 3px solid white;
+	border-radius: 12px;
+	width: 400px;
+	margin: 10px 5%;
+	padding-top: 10px;
+	text-align: center;
+}
+#plan img {
+	width: 250px;
+	height: 250px;
+}
+#testimonials h3{
+	padding: 60px;
+	padding-bottom: 20px;
+}
+#testimonials div {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	padding-left: 15%;
+	padding-right: 15%;
+	text-align: center;
+	margin-bottom: 25px;
+}
+#testimonials h4 {
+	font-size: 25px;
+	font-weight: 700;
+	text-transform: uppercase;
+	padding-top: 10px;
+	padding-bottom: 5px;
+}
+#testimonials p {
+	font-size: 20px;
+	padding-bottom: 5px;
+}
+#testimonials q {
+	font-style: italic;
+	line-height: 1.2em;
+	font-size: 20px;
+}
+#about {
+	background: #499BD2;
+	height: 650px;
+}
+#about h3 {
+	padding: 40px;
+}
+#about h4 {
+	font-size: 30px;
+	font-weight: 700;
+	padding: 10px;
+}
+#about div {
+	display: grid;
+	text-align: center;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	row-gap: 40px;
+}
+#about img {
+	width: 130px;
+	height: 130px;
+}
+#contact h3 {
+	padding: 40px;
+	padding-bottom: 15px;
+}
+#contact {
+	height: 1200px;
+}
+#contact div {
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+}	
+#fName, #lName, #email, #phone, #destination, #travelTime {
+	height: 60px;
+	border: 3px solid #9B26B0;
+	margin-bottom: 30px;
+	width: 100%;
+}
+#mySubmit {
+	height: 60px;
+	color: white;
+	background: #9B26B0;
+	width: 100%;
+	font-size: 20px;
+	text-transform: uppercase;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 700;
+	border: none;
+	align-self: flex-end;
+}
+#selects div {
+	margin-left: 0;
+	margin-right: 0;
+	width: 100%;
+}
+label[for="prefEmail"], label[for="prefText"], label[for="prefPhone"] {
+	font-family: "Montserrat", sans-serif;
+}
+fieldset legend, label[for="fName"], label[for="lName"], label[for="email"], label[for="phone"], label[for="destination"], label[for="travelTime"] {
+	font-family: "Montserrat", sans-serif;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+.form-required {
+	font-family: "Montserrat", sans-serif;
+	font-size: 16px;
+	font-style: italic;
+}
+.required {
+	font-size: 23px;
+	color: #9B26B0;
+}
+input::placeholder {
+	font-size: 16px;
+	padding-left: 10px;
+}
+fieldset {
+	display: flex;
+	flex-direction: column;
+	height: 300px;
+}
+fieldset label {
+	height: 100px;
+}
+input[type="radio"] {
+	appearance: none;
+	color: #9B26B0;
+	border: 3px solid #9B26B0;
+	border-radius: 30px;
+	width: 50px;
+	height: 50px;
+}
+input[type="radio"]:hover {
+	cursor: pointer;
+}
+input[type="radio"]:checked {
+	content: "";
+}
+input[type="radio"]:checked {
+	background: #9B26B0;
+}
+footer {
+	background-color: #EAEAEA;
+	height: 125px;
+	display: flex;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	flex-direction: column;
+	text-align: center;
+	font-size: 20px;
+}
+footer p {
+	padding-bottom: 15px;
+}
+footer a {
+	font-family: "Montserrat", sans-serif;
+	text-decoration: none;
+	color: #222222;
+	padding-top: 20px;
+}
+/* blockquote, q {
+	quotes: none;
+} */
+/* blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+} */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Breakpoints */
+@media screen and (min-width: 768px){ 
+	h3 {
+		font-size: 40px;
+	}
+	h1 {
+		height: 70px;
+		margin-left: -50px;
+		margin-top: 0;
+	}
+	header {
+		padding-top: 30px;
+		display: grid;
+		grid-template-columns: .25fr 1fr;
+		height: 300px;
+		margin-bottom: 20px;
+	}
+	header img {
+		width: 300px;
+		padding-left: 40px;
+	}
+	header p {
+		grid-column-start: 2;
+		height: 50px;
+		margin-top: -110px;
+		font-size: 25px;
+		margin-left: -50px;
+		width: 90%;
+	}
+	nav {
+		margin-top: -50px;
+		grid-column-start: 1;
+		grid-column-end: 2;
+		grid-row-start: 2;
+	}
+	nav li{
+		padding-top: 23px;
+		background-color: white;
+		margin-right: 30px;
+		height: 46px;
+		width: 175px;
+		border: none;
+	}
+	nav li:hover {
+		background-color: #F6D64A;
+	}
+	nav li a {
+		padding-top: 0;
+	}
+	#menu-toggle {
+		width: 0;
+		margin: 0;
+	}
+	#menu-toggle:hover {
+		width: 0;
+	}
+	#menu-toggle label {
+		display: none;
+	}
+	#menu-toggle ul {
+		position: absolute;
+		display: flex;
+		padding: 0 10% 0 10%;
+	}
+	#img-grid {
+		margin: auto;
+		width: 90%;
+		display:flex;
+		column-gap: 2%;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	#img-grid img {
+		width: 49%;
+	}
+	#img-grid picture img {
+		width: 100%;
+	}
+	#plan h3 {
+		padding-left: 5%;
+	}
+	#plan div {
+		padding-left: 10%;
+		width: 80%;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+	}
+	#plan section {
+		width: 300px;
+		height: 250px;
+	}
+	#plan img {
+		width: 150px;
+		height: 150px;
+	}
+	#plan h4 {
+		font-size: 25px;
+		padding-left: 0;
+		width: 300px;
+	}
+	#testimonials h3 {
+		padding-top: 30px;
+	}
+	#testimonials div {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+	}
+	#about {
+		height: 350px;
+	}
+	#about div {
+		display: flex;
+		justify-content: space-evenly;
+	}
+	#about img {
+		width: 100px;
+		height: 100px;
+	}
+	#contact {
+		height: 1000px;
+	}
+	#mySubmit{
+		width: 50%;
+	}
+	fieldset {
+		height: 100px;
+		justify-content: space-between;
+		flex-direction: row;
+	}
+	footer {
+		height: 50px;
+		flex-direction: row;
+		justify-content: center;
+		gap: 30px;
+		font-size: 18px;
+	}
+	footer a, footer p {
+		padding-top: 20px;
+	}
+}
+@media screen and (min-width: 1024px) {
+	h3 {
+		font-size: 25px;
+		margin-left: 80px;
+		width: 400px;
+	}
+	header img {
+		width: 400px;
+		padding-left: 10%; 
+	}
+	h1 {
+		padding-top: 50px;
+		font-size: 80px;
+	}
+	h1, header p {
+		margin-left: -50px;
+	}
+	nav {
+		position: absolute;
+		right: 740px;
+		top: 0px;
+	}
+	nav li {
+		padding-top: 17.5px;
+		height: 35px;
+		margin: 0 0 0 10px;
+	}
+	#intro {
+		padding: 0px 5% 50px 5%;
+		margin-top: -100px;
+		display: grid;
+		grid-template-columns: .8fr 1.2fr;
+		grid-template-rows: 1fr;
+	}
+	#intro h2 {
+		grid-column-start: 1;
+		grid-row-start: 1;
+	}
+	#intro p {
+		grid-column-start: 1;
+		grid-row-start: 1;
+		margin-top: 100px;
+	}
+	#img-grid {
+		grid-column-start: 2;
+		max-width: 1018.78px;
+	} 
+	#plan div {
+		padding: 0 40% 0 40%;
+		width: 20%;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+	#plan section {
+		width: 300px;
+		justify-content: space-around;
+	}
+	#testimonials div {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+	#testimonials section {
+		width: 400px;
+		justify-content: space-around;
+	}
+	#about h3 {
+		padding-top: 60px;
+		padding-bottom: 10px;
+	}
+	#about div {
+		justify-content: center;
+	}
+	#contact {
+		height: 500px;
+	}
+	#contact h3 {
+		font-size: 40px;
+		text-align: left;
+		margin-left: 25px;
+	}
+	label[for="prefEmail"], label[for="prefText"], label[for="prefPhone"] {
+		display: flex;
+		flex-direction: row;
+	}
+	#nums, #names, #selects {
+		height: 100%;
+		width: 100%;
+	}
+	#selects select {
+		margin-bottom: 0;
+	}
+	.radio-label{
+		padding-top: 20px;
+		padding-right: 10px;
+	}
+	form { 
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+	footer {
+		height: 30px;
+		padding: 10px 0 30px 0;
+	}
+	footer p {
+		padding-right: 180px;
+		width: 370px;
+	}
+	footer a {
+		width: 250px;
+		padding-right: 60px;
+	}
+}
